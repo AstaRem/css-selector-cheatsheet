@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS selectors and specificity</title>
+<link href="./styles.css" rel="stylesheet">
+<meta charset="utf-8">
+</head>
+
+<body>  
+    <h1>CSS selectors and specificity</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector in CSS</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>tag name</td>
+                <td>any HTML tag, it means type</td>
+                <td>least specific</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">.class</span></td>
+                <td>class name</td>
+                <td>more specific than type</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">#id</span></td>
+                <td>id name</td>
+                <td>more specific than class</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">h1.special</span></td>
+                <td>chaining selectors</td>
+                <td>we use it, if there is <span class="selector">.special</span> class in (not outside!)<span class="selector">h1</span>  element</td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">p &gt; .class</span></td>
+                <td>chaining selectors</td>
+                <td><span class="selector">.class</span> is direct child of <span class="selector">p</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">main-list li</span></td>
+                <td>descendant combinator</td>
+                <td>li item is nested within <span class="selector"> &lt; ul class="main-list" &gt; </span>. Therefore it is descendant  of <span class="selector">.main-list</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="selector">h1, .menu</span></td>
+                <td>multiple selectors</td>
+                <td>we can apply the same rule, for example same fonts to multiple elements, using multiple selectors, separated by comma</td>
+            </tr>
+
+            <tr>
+                <td><span class="rule">!important</span></td>
+                <td>not selector, but rule</td>
+                <td>It will override any style, no matter how specific it is.<br>In <span class="selector">p{color:blue !important}</span> all <span class="selector">p</span> elements appear blue. </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+<footer>
+   <p> &copy; by Asta Remeikiene </p>
+</footer>
+   
+</body>
+
+</html>

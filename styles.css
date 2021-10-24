@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(212, 240, 190);
+}
+
+h1 {
+  color: rgb(116, 58, 37);
+  text-align: center;
+}
+
+td {
+  background-color: white;
+}
+
+th {
+  background-color: rgba(255, 127, 80, 0.658);
+}
+
+table {
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.selector,
+.rule {
+  background-color: rgb(193, 240, 152);
+  border-radius: 3px;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
