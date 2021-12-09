@@ -1,35 +1,32 @@
-# Project Name
-> CSS seletors cheatsheet
-
-
+# My Portfolio website
+> Portfolio website to display my current and future work 
 
 ## General Information
-- I made this project for Codecademy challenge project 'Build your own cheatsheet'
-- It gives quick overview on CSS selectors and their specificity
+- I made this website to show my skills and display my projects I have accomplished so far
+- I made this project for Codecademy HTML, CSS and JavaScript Portfolio Website task
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
 
 ## Technologies Used
 - HTML5
 - CSS3
-- VS Code 
-
-
-
-## Setup
-You can preview this project without downloading. Enter the URL of the HTML file to: https://htmlpreview.github.io/
-
-
+- JavaScript ES6
 
 
 ## Project Status
-Project is: _in progress_ 
+Project is: _in progress_.
 
 
 ## Room for Improvement
-Add more topics from CSS. Include HTML. Include Markdown.
-
-
-
+- Add new projects as soon as I accomplish them. 
+- Add more JavaScript features
 
 ## Contact
-Created by [@AstaRem](https://github.com/AstaRem) - feel free to contact me!
+Created by [@AstaReme](https://github.com/AstaRem/) - feel free to contact me!
 
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->

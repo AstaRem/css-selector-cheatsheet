@@ -1,79 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<title>CSS selectors and specificity</title>
-<link href="./styles.css" rel="stylesheet">
-<meta charset="utf-8">
+  <title>Home</title>
+  <link href='styles.css' rel='stylesheet' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato&family=Sail&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
-<body>  
-    <h1>CSS selectors and specificity</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Selector in CSS</th>
-                <th>Name</th>
-                <th>Description</th>
-            </tr>
-        </thead>
+<body>
+    <header>
+        <div id="brand-name">
+        <p class="surname"> <strong>Asta Remeikiene</strong></p>
+        <p class="developer">Full-stack web developer - student</p>
+    </div>
+
+        <nav>
+            <ul>
+                <li> <a href=".\index.html">Home</a></li>      <!--make links as buttons?- different colour background? yellow? -->
+                <li> <a href=".\projects.html">Projects</a></li>
+                <li><a href=".\contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-img">
+                <img src=".\images\20210925_125547_300px2.jpg" alt="Asta Remeikiene face">
+            </div>
+            <div class="about-text">
+                <h1>About me</h1>
+                <p>Hi! I am Asta Remeikiene, living in United Kingdom. </p>
+                <p>I currently study to become <strong>Full-stack Engineer</strong> by doing <i>IT Carrer Switch</i> and <i>Codecademy</i> courses. I am practical person and learn best by doing, which is why these courses work great for me.</p>
+                <p>I have started learning to code recently, with no previous experience, but with a big desire to learn. What I like about coding is that both my interests – creativity and technology are working together!</p>
+                <p>I also discovered that I am on the exciting lifelong learning path. There will always be something new to learn, always interesting and challenging for sure!
+                </p>
+            </div>
+            </section>
+
+            <section id="projects">
+                <h2>My projects:</h2>
+                <div class="websites">
+                    <article class="project">
+                        <h3>Slip slip knit yarn shop website landing page</h3>
+                        <div class="project-img">
+                            <a href=""> <img src=".\images\yarn_shop2.jpg" alt=""></a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <h3>Ceramics and pottery club website landing page</h3>
+                        <div class="project-img">
+                            <a href=""> <img src=".\images\ceramics_club2.jpg" alt=""></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+                
+                
+                
+
+        </section>
+    </main>
 
 
-        <tbody>
-            <tr>
-                <td>tag name</td>
-                <td>any HTML tag, it means type</td>
-                <td>least specific</td>
-            </tr>
 
-            <tr>
-                <td><span class="selector">.class</span></td>
-                <td>class name</td>
-                <td>more specific than type</td>
-            </tr>
 
-            <tr>
-                <td><span class="selector">#id</span></td>
-                <td>id name</td>
-                <td>more specific than class</td>
-            </tr>
+    <footer>
+        <p>&copy; Asta Remeikiene, 2021</p>
+    </footer>
 
-            <tr>
-                <td><span class="selector">h1.special</span></td>
-                <td>chaining selectors</td>
-                <td>we use it, if there is <span class="selector">.special</span> class in (not outside!)<span class="selector">h1</span>  element</td>
-            </tr>
 
-            <tr>
-                <td><span class="selector">p &gt; .class</span></td>
-                <td>chaining selectors</td>
-                <td><span class="selector">.class</span> is direct child of <span class="selector">p</span></td>
-            </tr>
-
-            <tr>
-                <td><span class="selector">main-list li</span></td>
-                <td>descendant combinator</td>
-                <td>li item is nested within <span class="selector"> &lt; ul class="main-list" &gt; </span>. Therefore it is descendant  of <span class="selector">.main-list</span></td>
-            </tr>
-
-            <tr>
-                <td><span class="selector">h1, .menu</span></td>
-                <td>multiple selectors</td>
-                <td>we can apply the same rule, for example same fonts to multiple elements, using multiple selectors, separated by comma</td>
-            </tr>
-
-            <tr>
-                <td><span class="rule">!important</span></td>
-                <td>not selector, but rule</td>
-                <td>It will override any style, no matter how specific it is.<br>In <span class="selector">p{color:blue !important}</span> all <span class="selector">p</span> elements appear blue. </td>
-            </tr>
-
-        </tbody>
-
-    </table>
-<footer>
-   <p> &copy; by Asta Remeikiene </p>
-</footer>
-   
 </body>
 
 </html>
